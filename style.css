@@ -1,4 +1,562 @@
-*{
+* {
     margin: 0;
     padding: 0;
+}
+
+.container {
+    max-width: 1340px !important;
+    margin: auto !important;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+body {
+    font-family: "Work Sans", sans-serif;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>mainCss>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.header_section {
+    background-color: #fff;
+    height: 70px;
+    border-bottom: 1px solid #ddd;
+    line-height: 24px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    width: 100%;
+}
+
+.logo_div {
+    width: 20%;
+    margin-top: 4px;
+    float: left;
+    margin-left: 45px;
+}
+
+.logo_div img {
+    width: 38%;
+}
+.menu_div {
+    width: 49%;
+    line-height: 50px;
+    float: right;
+}
+
+.menu_div ul li {
+    display: inline-block;
+}
+
+.menu_div ul li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: black;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>banner_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.banner_section {
+    background: url(https://i.ibb.co/KwLsVF2/kobu-agency-IWLR561-Yb-MY-unsplash.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 270px 0px;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 3;
+    height: 88px;
+    margin-top: 70px;
+}
+
+.banner_section::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+.banner_text {
+    margin-left: 110px;
+    margin-top: -120px;
+}
+.banner_text a {
+    text-decoration: none;
+    color: #7d7d7c;
+    background: #fff;
+    padding: 18px 25px;
+    border-radius: 10px;
+    font-size: 20.8px;
+    margin: 10px;
+    font-weight: 600;
+    transition: all .3s;
+    line-height: 31.2px;
+}
+
+.banner_text a:hover {
+    background-color: #ef952a;
+    color: #fff;
+}
+
+.banner_text h2 {
+    font-size: 57.6px;
+    margin-bottom: 32px;
+    line-height: 63.36px;
+    font-weight: 700;
+    padding: 32px 0px 8px;
+}
+
+.banner_text h3 {
+    font-size: 25.6px;
+    padding: 10px 0px;
+    font-weight: 400;
+    line-height: 38.5px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>pricing_section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.pricing_section_head h3 {
+    text-align: center;
+    font-size: 57.6px;
+    font-weight: 400;
+}
+.pricing_section{
+    padding: 100px 0px;
+}
+.pricing_section_head h4 {
+    font-size: 25.6px;
+    text-align: center;
+    font-weight: 300;
+    line-height: 38.9px;
+    padding: 24px 0px 48px;
+    color: rgb(118,118,118);
+}
+.pricing_box {
+    width: 30%;
+    display: inline-block;
+    margin: 18px;
+    box-sizing: border-box;
+    box-shadow: 2.5px 4.33px 80px 0 rgba(64,87,191,0.2);
+}
+.pricing_box:hover .box_head{
+    background-color: #ef952a;
+    color: #fff;
+}
+.box_head h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+.box_head h4 {
+    font-size: 23px;
+    font-weight: 400;
+    line-height: 50px;
+}
+.box_head p {
+    font-size: 21px;
+    line-height: 35px;
+    font-weight: 300;
+}
+.box_head h1 {
+    font-size: 57.6px;
+    line-height: normal;
+    transition: background .2s;
+    width: 100%;
+}
+.box_head span {
+    font-size: 20.8px;
+    font-weight: 600;
+}
+.pricing_box ul{
+    line-height: 24px;
+    font-size: 16px;
+    padding: 16px 32px;
+    font-weight: 400;
+}
+.pricing_box ul li {
+    list-style: none;
+    font-size: 23px;
+    font-weight: 300;
+    line-height: 60px;
+}
+i.fas.fa-check {
+    width: 10%;
+    color: #ef952a;
+    font-size: 30px;
+}
+i.fas.fa-times {
+    width: 10%;
+    color: #ef952a;
+    font-size: 30px;
+}
+.box_head {
+    border-bottom: 1px solid #ddd;
+    padding: 32px 32px 16px;
+    line-height: 24px;
+    transition:all .3s;
+}
+.box_button{
+    text-align: center;
+    padding: 35px 0px;
+}
+.box_button a {
+    text-align: center;
+    background: white;
+    display: inline-block;
+    padding: 18px 30px;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+    color: #ef952a;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.box_head h1:hover{
+    background-color: rgb(255, 255, 255) !important;
+    color: black;
+}
+.pricing_box:hover .box_button a{
+    background-color: #ef952a !important;
+    color: #fff;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>our team member section>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.team_section {
+    display: inline-block;
+    width: 100%;
+    /* margin: auto !important; */
+    text-align: center;
+    padding: 60px 0px;
+}
+.img_1 {
+    text-align: left;
+    /* font-size: 25px; */
+    /* font-weight: 400; */
+    display: inline-block;
+    width: 21%;
+    margin: 15px;
+    border: 4px double #ef952a;
+    box-shadow: 2.5px 4.33px 30px 0 rgba(64,87,191,0.2);
+}
+.img_1 img{
+    width: 100%;
+}
+.img_bio p{
+    font-size: 20px;
+    font-weight: 300;
+}
+.img_bio h4{
+    font-weight: 500;
+    font-size: 26px;
+}
+.img_bio {
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>keep_data_section_>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+
+.keep_data_section_head h3 {
+    text-align: center;
+    font-size: 50.6px;
+    font-weight: 400;
+}
+.keep_data_section_head h4 {
+    font-size: 25.6px;
+    text-align: center;
+    font-weight: 300;
+    /* line-height: 28.9px; */
+    padding: 100px 0px 20px;
+    color: rgb(118,118,118);
+}
+.suscribe_btn {
+    display: inline-block;
+    width: 100%;
+    margin: 55px 0px;
+}
+.suscribe_btn a {
+    display: inline-block;
+    background-color: #ad9226;
+    color: #fff;
+    border: 1px solid #ad9226;
+    padding: 15px 81px;
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    left: 36%;
+    top: 21px;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .3s;
+}
+.suscribe_btn a:hover {
+    background-color: #fff;
+    border: 1px solid #ad9226;
+    box-shadow: 0px 0px 22px 19px #ddd;
+    color: #ad9226;
+}
+.subscribe_email {
+    padding: 21px 8px;
+    width: 500px;
+    font-size: 17px;
+    color: #ddd;
+    position: relative;
+    left: 29%;
+    top: 9px;
+    border: 1px solid #ad9226;
+    outline: none;
+    box-shadow: 1px 1px 14px 2px #ddd;
+    transition: .3s;
+    border-radius: 10px;
+}
+ .subscribe_email:focus{
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    border: 1px solid #000 ;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>why_choose>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> */
+.why_choose {
+    display: inline-block;
+    margin-left: 33px;
+}
+.why_choose h2 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    padding: 50px 0px;
+}
+.choose_img {
+    width: 46%;
+    display: inline-block;
+}
+.choose_text {
+    width: 43%;
+    display: inline-block;
+}
+.choose_text p{
+    font-size: 20px;
+    line-height: 30px;
+}
+.choose_text ol li {
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>feedback<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+.feedback_section{
+    background-color: #f5f5f5;
+    margin: 50px 0px;
+}
+.ffff {
+    background: #f5f5f5;
+}
+
+.feedback_head h3 {
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+}
+.feedback_head h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    padding: 15px 0px 45px 0px;
+}
+.feedback_p {
+    width: 89%;
+    text-align: center;
+    font-size: 20px;
+    line-height: 34px;
+    font-weight: 300;
+    padding: 50px 20px;
+    box-shadow: 0.5px 0.33px 73px 0 rgb(64 87 191 / 20%);
+    position: relative;
+    background: #fff;
+}
+.feedback_p::after {
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 95%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    font-size: 96px;
+    color: #fff;
+    /* font-size: 32px; */
+    transform: translateX(-17px);
+}
+.feedback_p::before {
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    position: absolute;
+    top: 40px;
+    left: -105px;
+    width: 100%;
+    height: 100%;
+    font-weight: 600;
+    color: #fff;
+    z-index: -1;
+    font-size: 73px;
+}
+.feedback {
+    width: 27.5%;
+    text-align: center;
+    display: inline-block;
+    margin: 33px;
+    border: 2px solid rgb(173, 173, 173);
+}
+.feedback_img img {
+    /* border-radius: 50%; */
+    width: 81px;
+    border: 10px solid #aa972c;
+}
+.feedback_img {
+    display: inline-block;
+    padding: 30px 0px;
+}
+.feedback_img_name {
+    display: inline-block;
+    position: relative;
+    top: -30px;
+    left: 10px;
+}
+.feedback_img_name h5 {
+    font-size: 22px;
+    font-weight: 600;
+}
+.feedback_img_name span {
+    text-align: left;
+    display: block;
+    font-size: 20px;
+}
+.feedback_section_00{
+    display: inline-block;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>contact_form<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.contact_section {
+    margin: auto;
+    width: 60%;
+    text-align: center;
+}
+input{
+    margin: 10px 0px;
+}
+
+.contact_form{
+    display: inline-block;
+    width: 100%;
+}
+.contact_form p {
+    font-size: 20px;
+    line-height: 27px;
+    font-weight: 400;
+    padding: 0px 0px 57px 0px;
+}
+.contact_form h3 {
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+.contact_emailF {
+    padding: 21px 8px;
+    width: 100%;
+    font-size: 18px;
+    color: #ddd;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: 1px 1px 14px 2px #ddd;
+    transition: .3s;
+    border-radius: 10px;
+    border: 1px solid #ad9226;
+}
+.contact_emailF:focus{
+    
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    border: 1px solid #6278df ;
+}
+.contact_email {
+    padding: 20px 5px;
+    width: 47%;
+    font-size: 17px;
+    color: #ddd;
+    position: relative;
+    left: 0;
+    top: 0;
+    border: 1px solid transparent;
+    outline: none;
+    box-shadow: 1px 1px 14px 2px #ddd;
+    transition: .3s;
+    border-radius: 9px;
+    /* margin: 0px 6px; */
+    margin-right: 9px;
+    border: 1px solid #ad9226;
+    position: relative;
+    left: 14px;
+    /* right: 81px; */
+}
+.contact_email:focus{
+    
+    box-shadow: 2.5px 4.33px 30px 0 rgb(64 87 191 / 10%);
+    border: 1px solid #6278df ;
+}
+.submit_btn {
+    display: inline-block;
+    background-color: #ad9226;
+    color: #fff;
+    border: 2px solid #ad9226;
+    padding: 13px 60px;
+    font-size: 28px;
+    font-weight: 600;
+    /* width: 100%; */
+    text-decoration: none;
+    border-radius: 10px;
+    transition: all .3s;
+    margin-top: 10px;
+}
+.submit_btn:hover{
+    
+    background-color: #fff;
+    border: 2px solid #ad9226;
+    box-shadow: 0px 0px 22px 19px #ddd;
+    color: #ad9226;
+}
+input-type[email]{
+    text-align: center;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>footer<<<<<<<<<<<<<<<<<<<<<<<<<< */
+footer{
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
 }
